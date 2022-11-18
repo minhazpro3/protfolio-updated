@@ -1,11 +1,75 @@
 import React from "react";
-import wave from "../images/wave.svg";
+import { BsFacebook } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsTelephoneFill } from "react-icons/bs";
+import { ImLocation2 } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="flex justify-center  bg-gray-900 bg-opacity-96 ">
-      {/* <img width={1365} src={wave} alt="" /> */}
-      <div>  <h3 className="text-center text-white font-medium mb-8 ">Copyright ©Md Minhaz-2022</h3></div>
+    <div className=" flex justify-center  bg-gray-900 bg-opacity-96">
+      <div className=" container mx-auto md:px-0 px-8">
+        <div className="my-20">
+          <div className="  md:flex justify-evenly items-center gap-x-36 space-y-16 md:space-y-0">
+            <div className=" space-y-2 text-white ">
+              <h5 className="flex space-x-4 text-xl ">
+                <BsTelephoneFill /> <span>+8801737-833726</span>
+              </h5>
+              <h5 className=" flex space-x-4 text-xl ">
+                <MdEmail /> <span>minhazpro1@gmail</span>
+              </h5>
+              <h5 className=" flex space-x-4 text-xl ">
+                <ImLocation2 />
+                <span> Bogura, Bangladesh</span>
+              </h5>
+            </div>
+            <div>
+              <div className="flex justify-around items-center space-x-6 pt-2">
+                <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
+                  <BsFacebook />
+                </h5>
+                <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
+                  <BsGithub />
+                </h5>
+                <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
+                  <BsLinkedin />
+                </h5>
+                <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
+                  <BsInstagram />
+                </h5>
+                <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
+                  <BsTwitter />
+                </h5>
+              </div>
+
+              <h3 className="text-center hidden md:block my-4 underline text-white font-medium   ">
+                Term && Condition
+              </h3>
+              <h3 className="text-center hidden md:block   text-white font-medium mb-8 ">
+                Copyright ©Md Minhaz-2022
+              </h3>
+            </div>
+            <div>
+              <input
+                className="w-full outline-none py-2 px-2 rounded-full"
+                type="email"
+                placeholder="E-mail"
+                require
+              />
+              <button className="text-white px-3   text-center py-2 w-full rounded-full my-2 bg-green-600">
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <h3 className="text-center md:hidden text-white font-medium mb-8 md:mb-0 ">
+            Copyright ©Md Minhaz-2022
+          </h3>
+        </div>
+      </div>
     </div>
   );
 };

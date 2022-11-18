@@ -19,6 +19,7 @@ const Projects = () => {
         "https://github.com/minhazpro3/freelance-marketplace-project-client",
       server:
         "https://github.com/minhazpro3/freelance-marketplace-project-server",
+      technology: "Next.js, Tailwindcss. Node.js, Mongodb, Socket.io",
     },
     {
       id: 2,
@@ -29,6 +30,7 @@ const Projects = () => {
       live: "https://life-care-web.netlify.app/",
       client: "https://github.com/minhazpro3/doctors-appointment-shop-client",
       server: "https://github.com/minhazpro3/doctors-appointment-shop-server",
+      technology: "React.js, Tailwindcss. Node.js, Mongodb",
     },
     {
       id: 3,
@@ -39,6 +41,7 @@ const Projects = () => {
       live: "https://friendly-wescoff-18e7cf.netlify.app/",
       client: "https://github.com/minhazpro3/modern-bike-bazar-Client-site",
       server: "https://github.com/minhazpro3/modern-bike-bazar-server-site",
+      technology: "React.js, Bootstrap. Node.js, Mongodb",
     },
 
     {
@@ -51,19 +54,19 @@ const Projects = () => {
       client:
         "https://github.com/minhazpro3/web-template-burger-resturent-html",
       server: "No",
+      technology: "Html5, Css3. Bootstrap",
     },
   ];
   return (
     <div>
       <div className=" bg-gray-900">
-        
         <div className="container mx-auto px-8 md:px-0  pt-10">
           <div>
             <div className="flex justify-center " data-aos="zoom-in-up">
-            <h2 className="text-center text-5xl pt-8 text-white font-medium border-b-4 border-red-800 inline-block">
-              A Few <span className="text-red-600">Projects </span>
-            </h2>
-           </div>
+              <h2 className="text-center text-5xl my-12 text-white font-medium border-b-4 border-red-800 inline-block">
+                My <span className="text-red-600">Projects </span>
+              </h2>
+            </div>
             <div className="grid md:grid-cols-2   pb-16 justify-center">
               {project.map((x) => (
                 <div data-aos="zoom-in-up" className=" 2 ">
@@ -81,34 +84,43 @@ const Projects = () => {
                         <p className="text-white text-base">
                           {x.desc.slice(0, 130)}
                         </p>
+                        <p className="text-blue-400 font-medium">
+                          {" "}
+                          Uses: {x.technology}
+                        </p>
                       </div>
                       <div className=" border-2 border-white mx-5"></div>
                       <div className="px-6 pt-4 pb-2">
-                        
-                        <a href={x.live} target="_blank"><button className="inline-block bg-gray-200 rounded-full px-6 py-1 text-sm font-semibold text-black mr-2 mb-2">
-                          Live
-                        </button></a>
+                        <a href={x.live} target="_blank">
+                          <button className="inline-block bg-gray-200 rounded-full px-6 py-1 text-sm font-semibold text-black mr-2 mb-2">
+                            Live
+                          </button>
+                        </a>
                         {x.server === "No" ? (
-                          
                           // eslint-disable-next-line react/jsx-no-target-blank
-                          <a href={x.client} target="_blank"><button className="inline-block bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-black mr-2 mb-2">
-                            Code
-                          </button></a>
+                          <a href={x.client} target="_blank">
+                            <button className="inline-block bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-black mr-2 mb-2">
+                              Code
+                            </button>
+                          </a>
                         ) : (
-                          
-                            // eslint-disable-next-line react/jsx-no-target-blank
-                            <a target="_blank" href={x.client}><button className="inline-block bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-black mr-2 mb-2">
-                            Client
-                            </button></a>
+                          // eslint-disable-next-line react/jsx-no-target-blank
+                          <a target="_blank" href={x.client}>
+                            <button className="inline-block bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-black mr-2 mb-2">
+                              Client
+                            </button>
+                          </a>
                         )}
                         {x.server === "No" ? (
                           " "
                         ) : (
-                         
-                            // eslint-disable-next-line react/jsx-no-target-blank
-                            <a target="_blank" href={x.server}> <button className="inline-block bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-black mr-2 mb-2">
-                            Server
-                            </button></a>
+                          // eslint-disable-next-line react/jsx-no-target-blank
+                          <a target="_blank" href={x.server}>
+                            {" "}
+                            <button className="inline-block bg-gray-200 rounded-full px-4 py-1 text-sm font-semibold text-black mr-2 mb-2">
+                              Server
+                            </button>
+                          </a>
                         )}
                       </div>
                     </div>

@@ -60,7 +60,7 @@ const About = ({ navbar }) => {
           className={`${
             navbar
               ? "absolute top-80  -z-30"
-              : "absolute top-14 md:top-32 md:left-20 right-5 -z-30"
+              : "absolute top-10  sm:top-12 md:top-32 md:left-20 right-5 -z-30"
           }`}
         >
           <img
