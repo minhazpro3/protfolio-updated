@@ -15,6 +15,14 @@ const About = ({ navbar }) => {
     <div className=" bg-gray-900 bg-opacity-96">
       <div className="container mx-auto px-8 md:px-0 md:pt-32 pt-4 ">
         {show ? <Modal setShowModal={setShowModal} /> : null}
+        <div data-aos="zoom-in-up" className="absolute md:ml-32 sm:ml-24 ">
+          <img
+            width="300px"
+            className="  "
+            src="https://i.ibb.co/S75VLGZ/graph-3.png"
+            alt=""
+          />
+        </div>
         <div className="grid mt-2 pb-44 sm:grid-cols-1 md:grid-cols-2  mx-24  items-center justify-around relative z-10">
           <div data-aos="zoom-in-up" className={`px-5 mb-6`}>
             <img
@@ -36,7 +44,7 @@ const About = ({ navbar }) => {
                 ...................................................................................................
               </h3>
               <p className="mt-8 font-medium">
-                I have 1.5 years of experience working in the Web Development
+                I have 2 years of experience working in the Web Development
                 field. I have achieved recommendation, with very inquisitive and
                 dedicated., and I am confident I can achieve similar results for
                 your Company. I am a natural curiosity and Patience. I am
@@ -54,20 +62,6 @@ const About = ({ navbar }) => {
               </button>
             </div>
           </div>
-        </div>
-        <div
-          data-aos="zoom-in-up"
-          className={`${
-            navbar
-              ? "absolute top-80  -z-30"
-              : "absolute top-10  sm:top-12 md:top-32 md:left-20 right-5 -z-30"
-          }`}
-        >
-          <img
-            className="  "
-            src="https://i.ibb.co/S75VLGZ/graph-3.png"
-            alt=""
-          />
         </div>
       </div>
     </div>
