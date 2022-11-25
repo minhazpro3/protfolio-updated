@@ -15,7 +15,7 @@ const About = ({ navbar }) => {
     <div className=" bg-gray-900 bg-opacity-96">
       <div className="container mx-auto px-8 md:px-0 md:pt-32 pt-4 ">
         {show ? <Modal setShowModal={setShowModal} /> : null}
-        <div data-aos="zoom-in-up" className="absolute md:ml-32 sm:ml-24 ">
+        <div data-aos="zoom-in-up" className="absolute md:ml-32 sm:ml-24 ml-10">
           <img
             width="300px"
             className="  "
