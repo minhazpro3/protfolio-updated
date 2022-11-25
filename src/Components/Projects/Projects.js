@@ -19,7 +19,7 @@ const Projects = () => {
         "https://github.com/minhazpro3/freelance-marketplace-project-client",
       server:
         "https://github.com/minhazpro3/freelance-marketplace-project-server",
-      technology: "Next.js, Tailwindcss. Node.js, Mongodb, Socket.io",
+      technology: "Next.js, Tailwindcss. Node.js, Mongodb",
     },
     {
       id: 2,
