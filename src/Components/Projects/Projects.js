@@ -13,7 +13,7 @@ const Projects = () => {
       img: "https://i.ibb.co/g4hjqZ3/frncOne.png",
       img2: "https://i.ibb.co/tLtDhqQ/frnctwo.png",
       desc: "Freelance Marketplace related like seller & buyer.Seller can create a gig and can publish for service.admin can manage seller and buyer.",
-      title: "Workfleek Freelance Marketplace",
+      title: "Workfleek Freelance  (Team Project)",
       live: "https://freelance-marketplace-project-client.vercel.app/",
       client:
         "https://github.com/minhazpro3/freelance-marketplace-project-client",
