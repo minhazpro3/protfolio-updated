@@ -109,11 +109,11 @@ const Home = () => {
                 }`}
               >
                 <ul className="     space-y-8 md:flex md:space-x-6 md:space-y-0">
-                  <li className="text-white text-center hover:text-indigo-200">
+                  {/* <li className="text-white text-center hover:text-indigo-200">
                     <a className="font-medium" href="#home">
                       Home
                     </a>
-                  </li>
+                  </li> */}
                   <li className="text-white text-center hover:text-indigo-200">
                     <a className="font-medium" href="#projects">
                       Projects

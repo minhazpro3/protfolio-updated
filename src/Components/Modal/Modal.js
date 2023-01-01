@@ -87,7 +87,7 @@ const Modal = ({ setShowModal }) => {
                           {" "}
                           <MdLocationPin />
                         </span>{" "}
-                        Sherpur, Bogra, Rajshahi
+                        Bogura, Rajshahi
                       </h3>
                       <p className="text-white text-base font-medium opacity-50">
                         ------------------------------------
@@ -161,8 +161,9 @@ const Modal = ({ setShowModal }) => {
                     </p>
                     <p className="text-white font-medium text-base">
                       Html5, Css3, React Bootstrap, TailwindCss, JavaScript,
-                      React.js, Node.js, Mongodb, Express.js, Firebase, RestApi,
-                      MsWord, MsExcel, Photoshop, Illustrator.
+                      React.js, Next.js, Redux, Scss, Node.js, Mongodb,
+                      Express.js, Firebase, RestApi, MsWord, MsExcel, Photoshop,
+                      Illustrator.
                     </p>
                   </div>
                   <div className="relative">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
@@ -7,12 +7,16 @@ import { BsTwitter } from "react-icons/bs";
 import { BsTelephoneFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
+import AOS from "aos";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div className=" flex justify-center  bg-gray-900 bg-opacity-96">
       <div className=" container mx-auto md:px-0 px-8">
-        <div className="my-20">
+        <div className="my-20" data-aos="zoom-in-up">
           <div className="  md:flex justify-evenly items-center gap-x-36 space-y-16 md:space-y-0">
             <div className=" space-y-2 text-white ">
               <h5 className="flex space-x-4 text-xl ">

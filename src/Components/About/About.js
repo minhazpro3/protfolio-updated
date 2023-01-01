@@ -15,7 +15,7 @@ const About = ({ navbar }) => {
     <div className=" bg-gray-900 bg-opacity-96">
       <div className="container mx-auto px-8 md:px-0 md:pt-32 pt-4 ">
         {show ? <Modal setShowModal={setShowModal} /> : null}
-        <div data-aos="zoom-in-up" className="absolute md:ml-32 sm:ml-24 ml-10">
+        <div data-aos="zoom-in-up" className="absolute md:ml-48 sm:ml-32 ml-12">
           <img
             width="300px"
             className="  "
@@ -24,7 +24,10 @@ const About = ({ navbar }) => {
           />
         </div>
         <div className="grid mt-2 pb-44 sm:grid-cols-1 md:grid-cols-2  mx-24  items-center justify-around relative z-10">
-          <div data-aos="zoom-in-up" className={`px-5 mb-6`}>
+          <div
+            data-aos="zoom-in-up"
+            className={`px-5 mb-6 flex justify-center`}
+          >
             <img
               className="w-[400] "
               src="https://i.ibb.co/dQTk2t7/cs-2-removebg-preview.png"
