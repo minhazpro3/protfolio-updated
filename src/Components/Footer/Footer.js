@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
 
           <h3 className="text-center md:hidden text-white font-medium mb-8 md:mb-0 ">
-            Copyright ©Md Minhaz-2022
+            Copyright ©Md Minhaz-2023
           </h3>
         </div>
       </div>
