@@ -5,7 +5,7 @@ import Modal from "../Modal/Modal";
 import { BsArrowRight } from "react-icons/bs";
 import "./About.css";
 
-const About = ({ navbar }) => {
+const About = () => {
   useEffect(() => {
     AOS.init();
   });

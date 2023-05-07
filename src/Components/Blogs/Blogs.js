@@ -7,17 +7,17 @@ const Blogs = () => {
     AOS.init();
   });
   return (
-    <div className="bg-gray-900  pb-8" >
+    <div className="bg-gray-900  pb-8 pt-10">
       <div className="container mx-auto px-8 md:px-0 ">
         <div className=" flex justify-center" data-aos="zoom-in-up">
-        <h2
-         
-        className=" text-white  border-b-4 inline-block text-center text-5xl font-poppins font-bold border-red-800"
-      >
-        Blogs 
-      </h2>
-     </div>
-        <div data-aos="zoom-in-up" className="grid  sm:grid-cols-1 md:grid-cols-2 gap-2  md:justify-content-center md:align-items-center">
+          <h2 className=" text-white  border-b-4 inline-block text-center text-5xl font-poppins font-bold border-red-800">
+            Blogs
+          </h2>
+        </div>
+        <div
+          data-aos="zoom-in-up"
+          className="grid  sm:grid-cols-1 md:grid-cols-2 gap-2  md:justify-content-center md:align-items-center"
+        >
           <div className="text-white mx-8 my-5">
             <h4 className="text-2xl mb-3">CRUD Operations:</h4>
             <p>
@@ -62,7 +62,12 @@ const Blogs = () => {
           </div>
         </div>
       </div>
-      <div data-aos="zoom-in-up" className="flex justify-center"><h4 className="  inline-block text-white text-3xl text-center"> Coming more...</h4></div>
+      <div data-aos="zoom-in-up" className="flex justify-center">
+        <h4 className="  inline-block text-white text-3xl text-center">
+          {" "}
+          Coming more...
+        </h4>
+      </div>
     </div>
   );
 };
