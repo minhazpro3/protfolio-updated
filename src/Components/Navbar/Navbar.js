@@ -63,24 +63,28 @@ const Navbar = () => {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-white hover:text-indigo-200">
-                  <a className="font-medium" href="#top">
-                    About
+                  <a
+                    className="font-medium"
+                    href="https://minhaz-web.netlify.app/"
+                  >
+                    Home
+                  </a>
+                </li>
+
+                <li className="text-white hover:text-indigo-200">
+                  <a className="font-medium" href="#projects">
+                    Projects
                   </a>
                 </li>
                 <li className="text-white hover:text-indigo-200">
                   <a className="font-medium" href="#blogs">
-                    Blogs
+                    blogs
                   </a>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <Link className="font-medium" to="/blogs">
-                    blogs
-                  </Link>
-                </li>
-                <li className="text-white hover:text-indigo-200">
-                  <Link className="font-medium" to="/contact">
+                  <a className="font-medium" href="#contact">
                     Contact
-                  </Link>
+                  </a>
                 </li>
               </ul>
 

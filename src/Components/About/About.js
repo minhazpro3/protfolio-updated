@@ -61,7 +61,7 @@ const About = () => {
                 type="button"
                 onClick={() => setShowModal(true)}
               >
-                Find more <BsArrowRight />
+                About more <BsArrowRight />
               </button>
             </div>
           </div>
