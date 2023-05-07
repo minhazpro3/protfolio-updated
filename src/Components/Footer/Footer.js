@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useEffect } from "react";
 import { BsFacebook } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
@@ -17,7 +18,7 @@ const Footer = () => {
     <div className=" flex justify-center  bg-gray-900 bg-opacity-96">
       <div className=" container mx-auto md:px-0 px-8">
         <div className="my-20" data-aos="zoom-in-up">
-          <div className="  md:flex justify-evenly items-center gap-x-36 space-y-16 md:space-y-0">
+          <div className="  md:flex justify-evenly   gap-x-36 space-y-16 md:space-y-0 items-stretch">
             <div className=" space-y-2 text-white ">
               <h5 className="flex space-x-4 text-xl ">
                 <BsTelephoneFill /> <span>+8801737-833726</span>
@@ -30,19 +31,36 @@ const Footer = () => {
                 <span> Bogura, Bangladesh</span>
               </h5>
             </div>
-            <div>
+            <div className="self-end">
               <div className="flex justify-around items-center space-x-6 pt-2">
                 <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
-                  <BsFacebook />
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/minhaz.moyna/"
+                  >
+                    <BsFacebook />
+                  </a>
                 </h5>
                 <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
-                  <BsGithub />
+                  <a target="_blank" href="https://github.com/minhazpro3">
+                    <BsGithub />
+                  </a>
                 </h5>
                 <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
-                  <BsLinkedin />
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/md-minhaz/"
+                  >
+                    <BsLinkedin />
+                  </a>
                 </h5>
                 <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
-                  <BsInstagram />
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/minhaz_dev/"
+                  >
+                    <BsInstagram />
+                  </a>
                 </h5>
                 <h5 className="text-xl font-medium text-white hover:text-blue-400 hover:cursor-pointer">
                   <BsTwitter />
@@ -52,8 +70,8 @@ const Footer = () => {
               <h3 className="text-center hidden md:block my-4 underline text-white font-medium   ">
                 Term && Condition
               </h3>
-              <h3 className="text-center hidden md:block   text-white font-medium mb-8 ">
-                Copyright ©Md Minhaz-2022
+              <h3 className="text-center hidden md:block   text-white font-medium   ">
+                Copyright ©Md Minhaz-2023
               </h3>
             </div>
             <div>
